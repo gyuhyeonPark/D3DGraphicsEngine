@@ -178,6 +178,7 @@ C:\Windows\System32\xcopy /Y "$(SolutionDir)Engine\*.inl" "$(SolutionDir)Librari
     <ClInclude Include="EnginePch.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Geometry.h" />
+    <ClInclude Include="GeometryHelper.h" />
     <ClInclude Include="Graphics.h" />
     <ClInclude Include="IExecute.h" />
     <ClInclude Include="IndexBuffer.h" />
@@ -201,6 +202,7 @@ C:\Windows\System32\xcopy /Y "$(SolutionDir)Engine\*.inl" "$(SolutionDir)Librari
     <ClCompile Include="ConstantBuffer.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Geometry.cpp" />
+    <ClCompile Include="GeometryHelper.cpp" />
     <ClCompile Include="Graphics.cpp" />
     <ClCompile Include="IExecute.cpp" />
     <ClCompile Include="IndexBuffer.cpp" />
