@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="02. QUadDemo.h" />
+    <ClInclude Include="02. QuadDemo.h" />
     <ClInclude Include="03. ConstantBufferDemo.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="pch.h" />

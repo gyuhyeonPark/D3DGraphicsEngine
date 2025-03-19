@@ -21,7 +21,7 @@
     <ClInclude Include="01. TriangleDemo.h">
       <Filter>Game</Filter>
     </ClInclude>
-    <ClInclude Include="02. QUadDemo.h">
+    <ClInclude Include="02. QuadDemo.h">
       <Filter>Game</Filter>
     </ClInclude>
     <ClInclude Include="03. ConstantBufferDemo.h">
