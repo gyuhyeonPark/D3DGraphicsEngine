@@ -10,6 +10,9 @@
     <Filter Include="Shader">
       <UniqueIdentifier>{d11b22ec-4343-42d2-a7f7-d9d7c820b3a2}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main\Camera">
+      <UniqueIdentifier>{9224fe65-bec0-4f32-808e-46bf1830288a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -27,6 +30,12 @@
     <ClInclude Include="03. ConstantBufferDemo.h">
       <Filter>Game</Filter>
     </ClInclude>
+    <ClInclude Include="04. CameraDemo.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraScript.h">
+      <Filter>Main\Camera</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -43,6 +52,12 @@
     </ClCompile>
     <ClCompile Include="03. ConstantBufferDemo.cpp">
       <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="04. CameraDemo.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraScript.cpp">
+      <Filter>Main\Camera</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
