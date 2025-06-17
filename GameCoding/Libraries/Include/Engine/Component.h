@@ -22,7 +22,7 @@ enum
 class Component
 {
 public:
-	Component();
+	//Component();
 	Component(ComponentType type);
 	virtual ~Component();
 

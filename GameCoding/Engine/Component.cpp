@@ -3,10 +3,6 @@
 #include "GameObject.h"
 #include "Transform.h"
 
-Component::Component()
-{
-}
-
 Component::Component(ComponentType type)
     : _type(type)
 {
