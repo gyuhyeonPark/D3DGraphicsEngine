@@ -4,6 +4,7 @@
 *.ilk
 *.sdf
 *.ipch
+*.pch
 .vs/
 *.suo
 *.ncb
