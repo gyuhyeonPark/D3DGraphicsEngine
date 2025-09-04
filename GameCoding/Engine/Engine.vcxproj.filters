@@ -124,7 +124,10 @@
       <Filter>00. Engine\Resource</Filter>
     </ClInclude>
     <ClInclude Include="MeshRenderer.h">
-      <Filter>00. Engine\Resource</Filter>
+      <Filter>04. Component</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>02. Managers</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -210,7 +213,10 @@
       <Filter>00. Engine\Resource</Filter>
     </ClCompile>
     <ClCompile Include="MeshRenderer.cpp">
-      <Filter>00. Engine\Resource</Filter>
+      <Filter>04. Component</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderManager.cpp">
+      <Filter>02. Managers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

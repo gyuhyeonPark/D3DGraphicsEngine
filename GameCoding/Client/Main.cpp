@@ -10,6 +10,7 @@
 #include "07. HeightMapDemo.h"
 #include "08. NormalDemo.h"
 #include "09. MeshDemo.h"
+#include "10. GlobalTestDemo.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR IpCmdLine, int nShowCmd)
 {
@@ -21,7 +22,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR IpCmdLine
 	desc.width = 800;
 	desc.height = 600;
 	desc.clearColor = Color(0.5f, 0.5f, 0.5f, 0.5f);
-	desc.app = make_shared<MeshDemo>();
+	desc.app = make_shared<GlobalTestDemo>();
 
 	GAME->Run(desc);
 
