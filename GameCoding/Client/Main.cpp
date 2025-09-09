@@ -12,6 +12,9 @@
 #include "09. MeshDemo.h"
 #include "10. GlobalTestDemo.h"
 #include "11. DepthStencilDemo.h"
+#include "12. AmbientDemo.h"
+#include "13. DiffuseDemo.h"
+#include "14. SpecularDemo.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR IpCmdLine, int nShowCmd)
 {
@@ -22,8 +25,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR IpCmdLine
 	desc.hWnd = NULL;
 	desc.width = 800;
 	desc.height = 600;
-	desc.clearColor = Color(0.5f, 0.5f, 0.5f, 0.5f);
-	desc.app = make_shared<DepthStencilDemo>();
+	desc.clearColor = Color(0.f, 0.f, 0.f, 0.f);
+	desc.app = make_shared<SpecularDemo>();
 
 	GAME->Run(desc);
 
