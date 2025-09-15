@@ -13,6 +13,7 @@ cbuffer GlobalBuffer
 	matrix V;
 	matrix P;
 	matrix VP;
+	matrix VInv;
 };
 
 cbuffer TransformBuffer
@@ -48,6 +49,14 @@ struct VertexTextureNormal
 	float3 normal : NORMAL;
 };
 
+struct VertexTextureNormalTangent
+{
+	float4 position : POSITION;
+	float2 uv : TEXCOORD;
+	float3 normal : NORMAL;
+	float3 tangent : TANGENT;
+};
+
 //////////////////
 // VertexOutput //
 //////////////////
@@ -65,6 +74,7 @@ struct MeshOutput
 	float2 uv       : TEXCOORD0;
 	float3 normal   : TEXCOORD1;
 	float3 worldPosition : TEXCOORD2;
+	float3 tangent : TEXCOORD3;
 };
 
 //////////////////
@@ -111,7 +121,7 @@ pass name											\
 
 float3 CameraPosition()
 {
-	return -V._41_42_43;
+	return VInv._41_42_43;
 }
 
 #endif

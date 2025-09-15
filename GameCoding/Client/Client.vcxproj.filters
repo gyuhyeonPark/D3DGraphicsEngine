@@ -90,6 +90,9 @@
     <ClInclude Include="17. MaterialDemo.h">
       <Filter>Game\Week2</Filter>
     </ClInclude>
+    <ClInclude Include="18. NormalMappingDemo.h">
+      <Filter>Game\Week2</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -152,6 +155,9 @@
     <ClCompile Include="17. MaterialDemo.cpp">
       <Filter>Game\Week2</Filter>
     </ClCompile>
+    <ClCompile Include="18. NormalMappingDemo.cpp">
+      <Filter>Game\Week2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="..\Shaders\01. Triangle.fx">
@@ -175,22 +181,7 @@
     <FxCompile Include="..\Shaders\07. Normal.fx">
       <Filter>Shader\Week1</Filter>
     </FxCompile>
-    <FxCompile Include="..\Shaders\08. GlobalTest.fx">
-      <Filter>Shader\Week2</Filter>
-    </FxCompile>
-    <FxCompile Include="..\Shaders\09. Lighting_Ambient.fx">
-      <Filter>Shader\Week2</Filter>
-    </FxCompile>
-    <FxCompile Include="..\Shaders\10. Lighting_Diffuse.fx">
-      <Filter>Shader\Week2</Filter>
-    </FxCompile>
-    <FxCompile Include="..\Shaders\11. Lighting_Specular.fx">
-      <Filter>Shader\Week2</Filter>
-    </FxCompile>
-    <FxCompile Include="..\Shaders\12. Lighting_Emissive.fx">
-      <Filter>Shader\Week2</Filter>
-    </FxCompile>
-    <FxCompile Include="..\Shaders\13. Lighting.fx">
+    <FxCompile Include="..\Shaders\14. NormalMapping.fx">
       <Filter>Shader\Week2</Filter>
     </FxCompile>
   </ItemGroup>
@@ -200,6 +191,24 @@
     </None>
     <None Include="..\Shaders\00. Light.fx">
       <Filter>Shader\Common</Filter>
+    </None>
+    <None Include="..\Shaders\08. GlobalTest.fx">
+      <Filter>Shader\Week2</Filter>
+    </None>
+    <None Include="..\Shaders\09. Lighting_Ambient.fx">
+      <Filter>Shader\Week2</Filter>
+    </None>
+    <None Include="..\Shaders\10. Lighting_Diffuse.fx">
+      <Filter>Shader\Week2</Filter>
+    </None>
+    <None Include="..\Shaders\11. Lighting_Specular.fx">
+      <Filter>Shader\Week2</Filter>
+    </None>
+    <None Include="..\Shaders\12. Lighting_Emissive.fx">
+      <Filter>Shader\Week2</Filter>
+    </None>
+    <None Include="..\Shaders\13. Lighting.fx">
+      <Filter>Shader\Week2</Filter>
     </None>
   </ItemGroup>
 </Project>

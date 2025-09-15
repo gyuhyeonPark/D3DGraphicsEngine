@@ -35,6 +35,7 @@
     <ClInclude Include="15. EmissiveDemo.h" />
     <ClInclude Include="16. LightingDemo.h" />
     <ClInclude Include="17. MaterialDemo.h" />
+    <ClInclude Include="18. NormalMappingDemo.h" />
     <ClInclude Include="CameraScript.h" />
     <ClInclude Include="Main.h" />
     <ClInclude Include="pch.h" />
@@ -57,6 +58,7 @@
     <ClCompile Include="15. EmissiveDemo.cpp" />
     <ClCompile Include="16. LightingDemo.cpp" />
     <ClCompile Include="17. MaterialDemo.cpp" />
+    <ClCompile Include="18. NormalMappingDemo.cpp" />
     <ClCompile Include="CameraScript.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="pch.cpp">
@@ -66,31 +68,40 @@
     <ClCompile Include="01. TriangleDemo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <FxCompile Include="..\Shaders\14. NormalMapping.fx">
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
+      <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VS</EntryPointName>
+    </FxCompile>
     <None Include="..\Shaders\00. Light.fx">
       <FileType>Document</FileType>
     </None>
-    <FxCompile Include="..\Shaders\09. Lighting_Ambient.fx">
+    <None Include="..\Shaders\09. Lighting_Ambient.fx">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VS</EntryPointName>
-    </FxCompile>
-    <FxCompile Include="..\Shaders\10. Lighting_Diffuse.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Shaders\10. Lighting_Diffuse.fx">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VS</EntryPointName>
-    </FxCompile>
-    <FxCompile Include="..\Shaders\11. Lighting_Specular.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Shaders\11. Lighting_Specular.fx">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VS</EntryPointName>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">5.0</ShaderModel>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">5.0</ShaderModel>
-    </FxCompile>
-    <FxCompile Include="..\Shaders\12. Lighting_Emissive.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Shaders\12. Lighting_Emissive.fx">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VS</EntryPointName>
-    </FxCompile>
-    <FxCompile Include="..\Shaders\13. Lighting.fx">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\Shaders\13. Lighting.fx">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VS</EntryPointName>
-    </FxCompile>
+      <FileType>Document</FileType>
+    </None>
     <None Include="..\Shaders\00. Global.fx">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
       </EntryPointName>
@@ -134,10 +145,11 @@
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">4.0_level_9_1</ShaderModel>
       <ShaderModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">4.0_level_9_1</ShaderModel>
     </FxCompile>
-    <FxCompile Include="..\Shaders\08. GlobalTest.fx">
+    <None Include="..\Shaders\08. GlobalTest.fx">
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">VS</EntryPointName>
       <EntryPointName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">VS</EntryPointName>
-    </FxCompile>
+      <FileType>Document</FileType>
+    </None>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
