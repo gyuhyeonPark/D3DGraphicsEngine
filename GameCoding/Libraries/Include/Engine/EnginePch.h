@@ -73,4 +73,5 @@ using namespace Microsoft::WRL;
 #include "GameObject.h"
 #include "Transform.h"
 #include "Texture.h"
+#include "Geometry.h"
 //#include "Mesh.h"

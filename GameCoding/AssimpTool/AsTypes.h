@@ -1,5 +1,4 @@
 #pragma once
-#include "pch.h"
 
 using VertexType = VertexTextureNormalTangentBlendData;
 
@@ -17,7 +16,6 @@ struct asMesh
 	aiMesh* mesh;
 	vector<VertexType> vertices;
 	vector<uint32> indices;
-
 	int32 boneIndex;
 	string materialName;
 };

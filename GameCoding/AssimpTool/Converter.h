@@ -20,7 +20,7 @@ private:
 private:
 	void ReadMaterialData();
 	void WriteMaterialData(wstring finalPath);
-	string WriteTexture(wstring finalPath);
+	string WriteTexture(string saveFolder, string file);
 
 private:
 	wstring _assetPath = L"../Resources/Assets/";
@@ -30,5 +30,10 @@ private:
 private:
 	shared_ptr<Assimp::Importer> _importer;
 	const aiScene* _scene;
+
+private:
+	vector<shared_ptr<asBone>> _bones;
+	vector<shared_ptr<asMesh>> _meshes;
+	vector<shared_ptr<asMaterial>> _materials;
 };
 
