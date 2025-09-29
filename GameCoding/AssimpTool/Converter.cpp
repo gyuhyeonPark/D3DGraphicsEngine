@@ -9,3 +9,15 @@ Converter::Converter()
 Converter::~Converter()
 {
 }
+
+void Converter::ReadAssetFile(wstring file)
+{
+}
+
+void Converter::ReadModelData(aiNode* node, int32 index, int32 parent)
+{
+}
+
+void Converter::ReadMaterialData()
+{
+}

@@ -21,6 +21,7 @@
     <ClCompile Include="Converter.cpp">
       <Filter>Utils</Filter>
     </ClCompile>
+    <ClCompile Include="AsTypes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h">
@@ -35,5 +36,6 @@
     <ClInclude Include="Converter.h">
       <Filter>Utils</Filter>
     </ClInclude>
+    <ClInclude Include="AsTypes.h" />
   </ItemGroup>
 </Project>
