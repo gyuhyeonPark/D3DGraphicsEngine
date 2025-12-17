@@ -18,18 +18,21 @@ MeshOutput VS(VertexTextureNormalTangent input)
 	return output;
 }
 
-// Specular (�ݻ籤)
-// �� �������� ������ �ݻ�Ǵ� �� (Phong)
 float4 PS(MeshOutput input) : SV_TARGET
 {
-	ComputeNormalMapping(input.normal, input.tangent, input.uv);
-
-	float4 color = ComputeLight(input.normal, input.uv, input.worldPosition);
-
+	//ComputeNormalMapping(input.normal, input.tangent, input.uv);
+	//float4 color = ComputeLight(input.normal, input.uv, input.worldPosition);
+    float4 color = DiffuseMap.Sample(LinearSampler, input.uv);
 	return color;
+}
+
+float4 PS_RED(MeshOutput input) : SV_TARGET
+{
+    return float4(1, 0, 0, 1);
 }
 
 technique11 T0
 {
-	PASS_VP(PO, VS, PS)
+	//PASS_VP(PO, VS, PS)
+	PASS_RS_VP(P1, FillModeWireFrame, VS, PS_RED)
 };

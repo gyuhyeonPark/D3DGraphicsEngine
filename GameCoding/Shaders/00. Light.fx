@@ -108,7 +108,7 @@ float4 ComputeLight(float3 normal, float2 uv, float3 worldPosition)
 
 void ComputeNormalMapping(inout float3 normal, float3 tangent, float2 uv)
 {
-	// [0, 255] ¹üÀ§¿¡¼­ [0, 1]·Î º¯È¯
+	// [0, 255] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ [0, 1]ï¿½ï¿½ ï¿½ï¿½È¯
 	float4 map = NormalMap.Sample(LinearSampler, uv);
 	if (any(map.rgb) == false)
 		return;
@@ -118,7 +118,7 @@ void ComputeNormalMapping(inout float3 normal, float3 tangent, float2 uv)
 	float3 B = normalize(cross(N, T));	// y
 	float3x3 TBN = float3x3(T, B, N);
 
-	// [0, 1] ¿¡¼­ [-1, 1] ¹üÀ§·Î º¯È¯
+	// [0, 1] ï¿½ï¿½ï¿½ï¿½ [-1, 1] ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½È¯
 	float3 tangentSpaceNormal = (map.rgb * 2.0f - 1.0f);
 	float3 worldNormal = mul(tangentSpaceNormal, TBN);
 

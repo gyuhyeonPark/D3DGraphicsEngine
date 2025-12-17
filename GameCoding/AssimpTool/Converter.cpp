@@ -50,7 +50,7 @@ void Converter::ExportMaterialData(wstring savePath)
 
 void Converter::ReadModelData(aiNode* node, int32 index, int32 parent)
 {
-	// Root -> Child ¼ø¼­
+	// Root -> Child ï¿½ï¿½ï¿½ï¿½
 
 	shared_ptr<asBone> bone = make_shared<asBone>();
 	bone->index = index;
@@ -58,7 +58,7 @@ void Converter::ReadModelData(aiNode* node, int32 index, int32 parent)
 	bone->name = node->mName.C_Str();
 
 	Matrix transform(node->mTransformation[0]);
-	bone->transform = transform.Transpose();		// ÀÌ ¶§ÀÇ Çà·ÄÀº Á÷¼Ó »ó°ü(ºÎ¸ð) ±âÁØÀÇ Relative TransformÀÌ´Ù.
+	bone->transform = transform.Transpose();		// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½(ï¿½Î¸ï¿½) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Relative Transformï¿½Ì´ï¿½.
 
 	// 2) Root (Local)
 	Matrix matParent = Matrix::Identity;
@@ -72,7 +72,7 @@ void Converter::ReadModelData(aiNode* node, int32 index, int32 parent)
 	// Mesh
 	ReadMeshData(node, index);
 
-	for (uint32 i = 0; i < node->mNumChildren; i++)			// ÀÚ½Ä ³ëµå°¡ ¾øÀ» ¶§ ±îÁö Àç±Í.
+	for (uint32 i = 0; i < node->mNumChildren; i++)			// ï¿½Ú½ï¿½ ï¿½ï¿½å°¡ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½.
 		ReadModelData(node->mChildren[i], _bones.size(), index);
 
 }
@@ -132,7 +132,7 @@ void Converter::WriteModelFile(wstring finalPath)
 {
 	auto path = filesystem::path(finalPath);
 
-	// Æú´õ°¡ ¾øÀ¸¸é ¸¸µç´Ù.
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½.
 	filesystem::create_directory(path.parent_path());
 
 	shared_ptr<FileUtils> file = make_shared<FileUtils>();
@@ -214,10 +214,10 @@ void Converter::ReadMaterialData()
 void Converter::WriteMaterialData(wstring finalPath)
 {
 	// memory -> xml
-	// tinyxml2 »ç¿ë
+	// tinyxml2 ï¿½ï¿½ï¿½
 	auto path = filesystem::path(finalPath);
 
-	// Æú´õ°¡ ¾øÀ¸¸é ¸¸µç´Ù.
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½.
 	filesystem::create_directory(path.parent_path());
 
 	string folder = path.parent_path().string();

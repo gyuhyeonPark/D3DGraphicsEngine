@@ -7,6 +7,7 @@ enum class ComponentType
 {
 	Transform,
 	MeshRenderer,
+	ModelRenderer,
 	Camera,
 	Animator,
 	// ...

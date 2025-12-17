@@ -28,6 +28,12 @@
     <Filter Include="Shader\Week2">
       <UniqueIdentifier>{925fd66c-6d86-471d-8cf1-80b40e354fe8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\Week3">
+      <UniqueIdentifier>{c5cbc243-f49b-42aa-b8e1-ea96bff75fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader\Week3">
+      <UniqueIdentifier>{83701d4b-3ebc-4020-9f42-4872f9d5b099}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -184,14 +190,17 @@
     <FxCompile Include="..\Shaders\14. NormalMapping.fx">
       <Filter>Shader\Week2</Filter>
     </FxCompile>
+    <FxCompile Include="..\Shaders\00. Global.fx">
+      <Filter>Shader\Common</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Shaders\00. Light.fx">
+      <Filter>Shader\Common</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Shaders\15. ModelDemo.fx">
+      <Filter>Shader\Week2</Filter>
+    </FxCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Shaders\00. Global.fx">
-      <Filter>Shader\Common</Filter>
-    </None>
-    <None Include="..\Shaders\00. Light.fx">
-      <Filter>Shader\Common</Filter>
-    </None>
     <None Include="..\Shaders\08. GlobalTest.fx">
       <Filter>Shader\Week2</Filter>
     </None>

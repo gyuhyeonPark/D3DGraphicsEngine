@@ -7,10 +7,10 @@ WPARAM Game::Run(GameDesc& desc)
 	_desc = desc;
 	assert(_desc.app != nullptr);
 
-	// 1) À©µµ¿ì Ã¢ Á¤º¸ µî·Ï
+	// 1) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¢ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 	MyRegisterClass();
 
-	// 2) À©µµ¿ì Ã¢ »ý¼º
+	// 2) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¢ ï¿½ï¿½ï¿½ï¿½
 	if (!InitInstance(SW_SHOWNORMAL))
 		return FALSE;
 		

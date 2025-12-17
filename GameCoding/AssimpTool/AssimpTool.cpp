@@ -16,7 +16,7 @@ void AssimpTool::Init()
 
 		// CustomData -> Memory
 	}
-
+	
 	{
 		shared_ptr<Converter> converter = make_shared<Converter>();
 

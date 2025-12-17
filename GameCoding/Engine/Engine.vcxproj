@@ -194,6 +194,7 @@ C:\Windows\System32\xcopy /Y "$(SolutionDir)Engine\*.inl" "$(SolutionDir)Librari
     <ClInclude Include="MeshRenderer.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="ModelMesh.h" />
+    <ClInclude Include="ModelRenderer.h" />
     <ClInclude Include="MonoBehaviour.h" />
     <ClInclude Include="Pass.h" />
     <ClInclude Include="pch.h" />
@@ -230,6 +231,7 @@ C:\Windows\System32\xcopy /Y "$(SolutionDir)Engine\*.inl" "$(SolutionDir)Librari
     <ClCompile Include="MeshRenderer.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="ModelMesh.cpp" />
+    <ClCompile Include="ModelRenderer.cpp" />
     <ClCompile Include="MonoBehaviour.cpp" />
     <ClCompile Include="Pass.cpp" />
     <ClCompile Include="pch.cpp">

@@ -1,0 +1,70 @@
+#include "pch.h"
+#include "StaticMeshDemo.h"
+#include "GeometryHelper.h"
+#include "Camera.h"
+#include "GameObject.h"
+#include "CameraScript.h"
+#include "MeshRenderer.h"
+#include "ModelRenderer.h"
+#include "Mesh.h"
+#include "Material.h"
+#include "Model.h"
+
+void StaticMeshDemo::Init()
+{
+	RESOURCES->Init();
+
+	_shader = make_shared<Shader>(L"15. ModelDemo.fx");
+
+	// Camera
+	_camera = make_shared<GameObject>();
+	_camera->GetOrAddTransform()->SetPosition(Vec3(0.f, 0.f, -10.f));
+	_camera->AddComponent(make_shared<Camera>());
+	_camera->AddComponent(make_shared<CameraScript>());
+
+	CreateTower();
+
+	RENDER->Init(_shader);
+}
+
+void StaticMeshDemo::Update()
+{
+	_camera->Update();
+	RENDER->Update();
+
+	{
+		LightDesc desc;
+		desc.ambient = Vec4(0.f);
+		desc.diffuse = Vec4(0.f);
+		desc.specular = Vec4(0.f);
+		desc.emissive = Vec4(1.f, 0.f, 0.f, 1.f);
+		desc.direction = Vec3(1.f, 0.f, 1.f);
+		RENDER->PushLightData(desc);
+	}
+
+	{
+		_obj->Update();
+	}
+}
+
+void StaticMeshDemo::Render()
+{
+
+}
+
+void StaticMeshDemo::CreateTower()
+{
+	// CustomData->Memory
+	shared_ptr<Model> m1 = make_shared<Model>();
+	m1->ReadModel(L"Tower/Tower");
+	m1->ReadMaterial(L"Tower/Tower");
+
+	_obj = make_shared<GameObject>();
+	_obj->GetOrAddTransform()->SetPosition(Vec3(0.5f, 0.f, 2.f));
+	_obj->GetOrAddTransform()->SetScale(Vec3(1.f));
+	_obj->GetOrAddTransform()->SetLocalRotation(Vec3(90, 90, 0));
+	_obj->AddComponent(make_shared<ModelRenderer>(_shader));
+	{
+		_obj->GetModelRenderer()->SetModel(m1);
+	}
+}

@@ -1,6 +1,6 @@
-// ´Ù¸¥ ¼ÎÀÌ´õ¿¡¼­ #include¸¦ ÅëÇØ °ø¿ëÀ¸·Î »ç¿ëÇÏ°Ô µÉ ¼ÎÀÌ´õ ÆÄÀÏ.
+// ï¿½Ù¸ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ï¿½ï¿½ï¿½ï¿½ #includeï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½.
 
-// #pragme once Ã³·³ Áßº¹ ¹æÁöÇÏ±â.
+// #pragme once Ã³ï¿½ï¿½ ï¿½ßºï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï±ï¿½.
 #ifndef _GLOBAL_FX_
 #define _GLOBAL_FX_
 
@@ -65,7 +65,7 @@ struct VertexOutput
 {
 	float4 position : SV_POSITION;
 	float2 uv       : TEXCOORD0;
-	float3 normal   : TEXCOORD1;  // NORMAL ¡æ TEXCOORD1 ·Î º¯°æ
+	float3 normal   : TEXCOORD1;  // NORMAL ï¿½ï¿½ TEXCOORD1 ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 };
 
 struct MeshOutput
@@ -114,6 +114,14 @@ pass name											\
 	SetVertexShader(CompileShader(vs_5_0, vs()));	\
 	SetPixelShader(CompileShader(ps_5_0, ps()));	\
 }													
+
+#define PASS_RS_VP(name, rs, vs, ps)				\
+pass name											\
+{													\
+    SetRasterizerState(rs);							\
+    SetVertexShader(CompileShader(vs_5_0, vs()));	\
+    SetPixelShader(CompileShader(ps_5_0, ps()));	\
+}									
 
 //////////////
 // Function //

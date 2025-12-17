@@ -241,27 +241,27 @@ std::shared_ptr<ModelBone> Model::GetBoneByName(const wstring& name)
 
 void Model::BindCacheInfo()
 {
-	// Mesh¿¡ Material Ä³½Ì
+	// Meshï¿½ï¿½ Material Ä³ï¿½ï¿½
 	for (const auto& mesh : _meshes)
 	{
-		// ÀÌ¹Ì Ã£¾ÒÀ¸¸é ½ºÅµ
+		// ï¿½Ì¹ï¿½ Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Åµ
 		if (mesh->material != nullptr)
 			continue;
 
 		mesh->material = GetMaterialByName(mesh->materialName);
 	}
 
-	// Mesh¿¡ Bone Ä³½Ì
+	// Meshï¿½ï¿½ Bone Ä³ï¿½ï¿½
 	for (const auto& mesh : _meshes)
 	{
-		// ÀÌ¹Ì Ã£¾ÒÀ¸¸é ½ºÅµ
+		// ï¿½Ì¹ï¿½ Ã£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Åµ
 		if (mesh->bone != nullptr)
 			continue;
 
 		mesh->bone = GetBoneByIndex(mesh->boneIndex);
 	}
 
-	// Bone °èÃþ Á¤º¸ Ã¤¿ì±â
+	// Bone ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ï¿½
 	if (_root == nullptr && _bones.size() > 0)
 	{
 		_root = _bones[0];

@@ -17,8 +17,8 @@ MeshOutput VS(VertexTextureNormal input)
 	return output;
 }
 
-// Specular (¹Ý»ç±¤)
-// ÇÑ ¹æÇâÀ¸·Î ¿ÏÀüÈ÷ ¹Ý»çµÇ´Â ºû (Phong)
+// Specular (ï¿½Ý»ç±¤)
+// ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ý»ï¿½Ç´ï¿½ ï¿½ï¿½ (Phong)
 float4 PS(MeshOutput input) : SV_TARGET
 {
 	float4 color = ComputeLight(input.normal, input.uv, input.worldPosition);
