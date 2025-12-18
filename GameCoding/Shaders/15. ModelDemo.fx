@@ -5,10 +5,20 @@ float3 LightDir;
 float4 LightSpecular;
 float4 MaterialSpecular;
 
+#define MAX_MODEL_TRANSFORM 50
+
+cbuffer BoneBuffer
+{
+    matrix BoneTransforms[MAX_MODEL_TRANSFORM];
+};
+
+uint BoneIndex;
+
 MeshOutput VS(VertexTextureNormalTangent input)
 {
 	MeshOutput output;
-	output.position = mul(input.position, W);
+    output.position = mul(input.position, BoneTransforms[BoneIndex]);
+    output.position = mul(output.position, W);
 	output.worldPosition = output.position.xyz;
 	output.position = mul(output.position, VP);
 	output.uv = input.uv;
@@ -33,6 +43,6 @@ float4 PS_RED(MeshOutput input) : SV_TARGET
 
 technique11 T0
 {
-	//PASS_VP(PO, VS, PS)
+//	PASS_VP(PO, VS, PS)
 	PASS_RS_VP(P1, FillModeWireFrame, VS, PS_RED)
 };

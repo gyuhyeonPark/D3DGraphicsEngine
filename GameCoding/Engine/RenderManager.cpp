@@ -8,19 +8,23 @@ void RenderManager::Init(shared_ptr<Shader> shader)
 
 	_globalBuffer = make_shared<ConstantBuffer<GlobalDesc>>();
 	_globalBuffer->Create();
-	_globalEffectBuffer = shader->GetConstantBuffer("GlobalBuffer");	// ¼ÎÀÌ´õ ÆÄÀÏ¿¡¼­ °¡Á®¿Â´Ù.
+	_globalEffectBuffer = shader->GetConstantBuffer("GlobalBuffer");	// ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Â´ï¿½.
 	
 	_transformBuffer = make_shared<ConstantBuffer<TransformDesc>>();
 	_transformBuffer->Create();
-	_transformEffectBuffer = shader->GetConstantBuffer("TransformBuffer");	// ¼ÎÀÌ´õ ÆÄÀÏ¿¡¼­ °¡Á®¿Â´Ù.
+	_transformEffectBuffer = shader->GetConstantBuffer("TransformBuffer");	// ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Â´ï¿½.
 
 	_lightBuffer = make_shared<ConstantBuffer<LightDesc>>();
 	_lightBuffer->Create();
-	_lightEffectBuffer = shader->GetConstantBuffer("LightBuffer");	// ¼ÎÀÌ´õ ÆÄÀÏ¿¡¼­ °¡Á®¿Â´Ù.
+	_lightEffectBuffer = shader->GetConstantBuffer("LightBuffer");	// ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Â´ï¿½.
 
 	_materialBuffer = make_shared<ConstantBuffer<MaterialDesc>>();
 	_materialBuffer->Create();
-	_materialEffectBuffer = shader->GetConstantBuffer("MaterialBuffer");	// ¼ÎÀÌ´õ ÆÄÀÏ¿¡¼­ °¡Á®¿Â´Ù.
+	_materialEffectBuffer = shader->GetConstantBuffer("MaterialBuffer");	// ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½Ï¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Â´ï¿½.
+
+	_boneBuffer = make_shared<ConstantBuffer<BoneDesc>>();
+	_boneBuffer->Create();
+	_boneEffectBuffer = shader->GetConstantBuffer("BoneBuffer");
 }
 
 void RenderManager::Update()
@@ -61,4 +65,11 @@ void RenderManager::PushTransformData(const TransformDesc& desc)
 	_transformDesc = desc;
 	_transformBuffer->CopyData(_transformDesc);
 	_transformEffectBuffer->SetConstantBuffer(_transformBuffer->GetComPtr().Get());
+}
+
+void RenderManager::PushBoneData(const BoneDesc& desc)
+{
+	_boneDesc = desc;
+	_boneBuffer->CopyData(_boneDesc);
+	_boneEffectBuffer->SetConstantBuffer(_boneBuffer->GetComPtr().Get());
 }
