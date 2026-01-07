@@ -48,32 +48,32 @@ void GeometryHelper::CreateCube(shared_ptr<Geometry<VertexTextureData>> geometry
 
 	vector<VertexTextureData> vtx(24);
 
-	// ¾Õ¸é
+	// ï¿½Õ¸ï¿½
 	vtx[0] = VertexTextureData{ Vec3(-w2, -h2, -d2), Vec2(0.0f, 1.0f) };
 	vtx[1] = VertexTextureData{ Vec3(-w2, +h2, -d2), Vec2(0.0f, 0.0f) };
 	vtx[2] = VertexTextureData{ Vec3(+w2, +h2, -d2), Vec2(1.0f, 0.0f) };
 	vtx[3] = VertexTextureData{ Vec3(+w2, -h2, -d2), Vec2(1.0f, 1.0f) };
-	// µÞ¸é
+	// ï¿½Þ¸ï¿½
 	vtx[4] = VertexTextureData{ Vec3(-w2, -h2, +d2), Vec2(1.0f, 1.0f) };
 	vtx[5] = VertexTextureData{ Vec3(+w2, -h2, +d2), Vec2(0.0f, 1.0f) };
 	vtx[6] = VertexTextureData{ Vec3(+w2, +h2, +d2), Vec2(0.0f, 0.0f) };
 	vtx[7] = VertexTextureData{ Vec3(-w2, +h2, +d2), Vec2(1.0f, 0.0f) };
-	// À­¸é
+	// ï¿½ï¿½ï¿½ï¿½
 	vtx[8] = VertexTextureData{ Vec3(-w2, +h2, -d2), Vec2(0.0f, 1.0f) };
 	vtx[9] = VertexTextureData{ Vec3(-w2, +h2, +d2), Vec2(0.0f, 0.0f) };
 	vtx[10] = VertexTextureData{ Vec3(+w2, +h2, +d2), Vec2(1.0f, 0.0f) };
 	vtx[11] = VertexTextureData{ Vec3(+w2, +h2, -d2), Vec2(1.0f, 1.0f) };
-	// ¾Æ·§¸é
+	// ï¿½Æ·ï¿½ï¿½ï¿½
 	vtx[12] = VertexTextureData{ Vec3(-w2, -h2, -d2), Vec2(1.0f, 1.0f) };
 	vtx[13] = VertexTextureData{ Vec3(+w2, -h2, -d2), Vec2(0.0f, 1.0f) };
 	vtx[14] = VertexTextureData{ Vec3(+w2, -h2, +d2), Vec2(0.0f, 0.0f) };
 	vtx[15] = VertexTextureData{ Vec3(-w2, -h2, +d2), Vec2(1.0f, 0.0f) };
-	// ¿ÞÂÊ¸é
+	// ï¿½ï¿½ï¿½Ê¸ï¿½
 	vtx[16] = VertexTextureData{ Vec3(-w2, -h2, +d2), Vec2(0.0f, 1.0f) };
 	vtx[17] = VertexTextureData{ Vec3(-w2, +h2, +d2), Vec2(0.0f, 0.0f) };
 	vtx[18] = VertexTextureData{ Vec3(-w2, +h2, -d2), Vec2(1.0f, 0.0f) };
 	vtx[19] = VertexTextureData{ Vec3(-w2, -h2, -d2), Vec2(1.0f, 1.0f) };
-	// ¿À¸¥ÂÊ¸é
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½
 	vtx[20] = VertexTextureData{ Vec3(+w2, -h2, -d2), Vec2(0.0f, 1.0f) };
 	vtx[21] = VertexTextureData{ Vec3(+w2, +h2, -d2), Vec2(0.0f, 0.0f) };
 	vtx[22] = VertexTextureData{ Vec3(+w2, +h2, +d2), Vec2(1.0f, 0.0f) };
@@ -83,22 +83,22 @@ void GeometryHelper::CreateCube(shared_ptr<Geometry<VertexTextureData>> geometry
 
 	vector<uint32> idx(36);
 
-	// ¾Õ¸é
+	// ï¿½Õ¸ï¿½
 	idx[0] = 0; idx[1] = 1; idx[2] = 2;
 	idx[3] = 0; idx[4] = 2; idx[5] = 3;
-	// µÞ¸é
+	// ï¿½Þ¸ï¿½
 	idx[6] = 4; idx[7] = 5; idx[8] = 6;
 	idx[9] = 4; idx[10] = 6; idx[11] = 7;
-	// À­¸é
+	// ï¿½ï¿½ï¿½ï¿½
 	idx[12] = 8; idx[13] = 9; idx[14] = 10;
 	idx[15] = 8; idx[16] = 10; idx[17] = 11;
-	// ¾Æ·§¸é
+	// ï¿½Æ·ï¿½ï¿½ï¿½
 	idx[18] = 12; idx[19] = 13; idx[20] = 14;
 	idx[21] = 12; idx[22] = 14; idx[23] = 15;
-	// ¿ÞÂÊ¸é
+	// ï¿½ï¿½ï¿½Ê¸ï¿½
 	idx[24] = 16; idx[25] = 17; idx[26] = 18;
 	idx[27] = 16; idx[28] = 18; idx[29] = 19;
-	// ¿À¸¥ÂÊ¸é
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½
 	idx[30] = 20; idx[31] = 21; idx[32] = 22;
 	idx[33] = 20; idx[34] = 22; idx[35] = 23;
 
@@ -107,15 +107,15 @@ void GeometryHelper::CreateCube(shared_ptr<Geometry<VertexTextureData>> geometry
 
 void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureData>> geometry)
 {
-	float radius = 0.5f; // ±¸ÀÇ ¹ÝÁö¸§
-	uint32 stackCount = 20; // °¡·Î ºÐÇÒ
-	uint32 sliceCount = 20; // ¼¼·Î ºÐÇÒ
+	float radius = 0.5f; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	uint32 stackCount = 20; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	uint32 sliceCount = 20; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 	vector<VertexTextureData> vtx;
 
 	VertexTextureData v;
 
-	// ºÏ±Ø
+	// ï¿½Ï±ï¿½
 	v.position = Vec3(0.0f, radius, 0.0f);
 	v.uv = Vec2(0.5f, 0.0f);
 	vtx.push_back(v);
@@ -126,12 +126,12 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureData>> geomet
 	float deltaU = 1.f / static_cast<float>(sliceCount);
 	float deltaV = 1.f / static_cast<float>(stackCount);
 
-	// °í¸®¸¶´Ù µ¹¸é¼­ Á¤Á¡À» °è»êÇÑ´Ù (ºÏ±Ø/³²±Ø ´ÜÀÏÁ¡Àº °í¸®°¡ X)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½é¼­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½ (ï¿½Ï±ï¿½/ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ X)
 	for (uint32 y = 1; y <= stackCount - 1; ++y)
 	{
 		float phi = y * stackAngle;
 
-		// °í¸®¿¡ À§Ä¡ÇÑ Á¤Á¡
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		for (uint32 x = 0; x <= sliceCount; ++x)
 		{
 			float theta = x * sliceAngle;
@@ -146,7 +146,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureData>> geomet
 		}
 	}
 
-	// ³²±Ø
+	// ï¿½ï¿½ï¿½ï¿½
 	v.position = Vec3(0.0f, -radius, 0.0f);
 	v.uv = Vec2(0.5f, 1.0f);
 	vtx.push_back(v);
@@ -155,7 +155,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureData>> geomet
 
 	vector<uint32> idx(36);
 
-	// ºÏ±Ø ÀÎµ¦½º
+	// ï¿½Ï±ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 	for (uint32 i = 0; i <= sliceCount; ++i)
 	{
 		//  [0]
@@ -166,7 +166,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureData>> geomet
 		idx.push_back(i + 1);
 	}
 
-	// ¸öÅë ÀÎµ¦½º
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 	uint32 ringVertexCount = sliceCount + 1;
 	for (uint32 y = 0; y < stackCount - 2; ++y)
 	{
@@ -187,7 +187,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureData>> geomet
 		}
 	}
 
-	// ³²±Ø ÀÎµ¦½º
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 	uint32 bottomIndex = static_cast<uint32>(vtx.size()) - 1;
 	uint32 lastRingStartIndex = bottomIndex - ringVertexCount;
 	for (uint32 i = 0; i < sliceCount; ++i)
@@ -276,32 +276,32 @@ void GeometryHelper::CreateCube(shared_ptr<Geometry<VertexTextureNormalData>> ge
 
 	vector<VertexTextureNormalData> vtx(24);
 
-	// ¾Õ¸é
+	// ï¿½Õ¸ï¿½
 	vtx[0] = VertexTextureNormalData(Vec3(-w2, -h2, -d2), Vec2(0.0f, 1.0f), Vec3(0.0f, 0.0f, -1.0f));
 	vtx[1] = VertexTextureNormalData(Vec3(-w2, +h2, -d2), Vec2(0.0f, 0.0f), Vec3(0.0f, 0.0f, -1.0f));
 	vtx[2] = VertexTextureNormalData(Vec3(+w2, +h2, -d2), Vec2(1.0f, 0.0f), Vec3(0.0f, 0.0f, -1.0f));
 	vtx[3] = VertexTextureNormalData(Vec3(+w2, -h2, -d2), Vec2(1.0f, 1.0f), Vec3(0.0f, 0.0f, -1.0f));
-	// µÞ¸é
+	// ï¿½Þ¸ï¿½
 	vtx[4] = VertexTextureNormalData(Vec3(-w2, -h2, +d2), Vec2(1.0f, 1.0f), Vec3(0.0f, 0.0f, 1.0f));
 	vtx[5] = VertexTextureNormalData(Vec3(+w2, -h2, +d2), Vec2(0.0f, 1.0f), Vec3(0.0f, 0.0f, 1.0f));
 	vtx[6] = VertexTextureNormalData(Vec3(+w2, +h2, +d2), Vec2(0.0f, 0.0f), Vec3(0.0f, 0.0f, 1.0f));
 	vtx[7] = VertexTextureNormalData(Vec3(-w2, +h2, +d2), Vec2(1.0f, 0.0f), Vec3(0.0f, 0.0f, 1.0f));
-	// À­¸é
+	// ï¿½ï¿½ï¿½ï¿½
 	vtx[8] = VertexTextureNormalData(Vec3(-w2, +h2, -d2), Vec2(0.0f, 1.0f), Vec3(0.0f, 1.0f, 0.0f));
 	vtx[9] = VertexTextureNormalData(Vec3(-w2, +h2, +d2), Vec2(0.0f, 0.0f), Vec3(0.0f, 1.0f, 0.0f));
 	vtx[10] = VertexTextureNormalData(Vec3(+w2, +h2, +d2), Vec2(1.0f, 0.0f), Vec3(0.0f, 1.0f, 0.0f));
 	vtx[11] = VertexTextureNormalData(Vec3(+w2, +h2, -d2), Vec2(1.0f, 1.0f), Vec3(0.0f, 1.0f, 0.0f));
-	// ¾Æ·§¸é
+	// ï¿½Æ·ï¿½ï¿½ï¿½
 	vtx[12] = VertexTextureNormalData(Vec3(-w2, -h2, -d2), Vec2(1.0f, 1.0f), Vec3(0.0f, -1.0f, 0.0f));
 	vtx[13] = VertexTextureNormalData(Vec3(+w2, -h2, -d2), Vec2(0.0f, 1.0f), Vec3(0.0f, -1.0f, 0.0f));
 	vtx[14] = VertexTextureNormalData(Vec3(+w2, -h2, +d2), Vec2(0.0f, 0.0f), Vec3(0.0f, -1.0f, 0.0f));
 	vtx[15] = VertexTextureNormalData(Vec3(-w2, -h2, +d2), Vec2(1.0f, 0.0f), Vec3(0.0f, -1.0f, 0.0f));
-	// ¿ÞÂÊ¸é
+	// ï¿½ï¿½ï¿½Ê¸ï¿½
 	vtx[16] = VertexTextureNormalData(Vec3(-w2, -h2, +d2), Vec2(0.0f, 1.0f), Vec3(-1.0f, 0.0f, 0.0f));
 	vtx[17] = VertexTextureNormalData(Vec3(-w2, +h2, +d2), Vec2(0.0f, 0.0f), Vec3(-1.0f, 0.0f, 0.0f));
 	vtx[18] = VertexTextureNormalData(Vec3(-w2, +h2, -d2), Vec2(1.0f, 0.0f), Vec3(-1.0f, 0.0f, 0.0f));
 	vtx[19] = VertexTextureNormalData(Vec3(-w2, -h2, -d2), Vec2(1.0f, 1.0f), Vec3(-1.0f, 0.0f, 0.0f));
-	// ¿À¸¥ÂÊ¸é
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½
 	vtx[20] = VertexTextureNormalData(Vec3(+w2, -h2, -d2), Vec2(0.0f, 1.0f), Vec3(1.0f, 0.0f, 0.0f));
 	vtx[21] = VertexTextureNormalData(Vec3(+w2, +h2, -d2), Vec2(0.0f, 0.0f), Vec3(1.0f, 0.0f, 0.0f));
 	vtx[22] = VertexTextureNormalData(Vec3(+w2, +h2, +d2), Vec2(1.0f, 0.0f), Vec3(1.0f, 0.0f, 0.0f));
@@ -311,22 +311,22 @@ void GeometryHelper::CreateCube(shared_ptr<Geometry<VertexTextureNormalData>> ge
 
 	vector<uint32> idx(36);
 
-	// ¾Õ¸é
+	// ï¿½Õ¸ï¿½
 	idx[0] = 0; idx[1] = 1; idx[2] = 2;
 	idx[3] = 0; idx[4] = 2; idx[5] = 3;
-	// µÞ¸é
+	// ï¿½Þ¸ï¿½
 	idx[6] = 4; idx[7] = 5; idx[8] = 6;
 	idx[9] = 4; idx[10] = 6; idx[11] = 7;
-	// À­¸é
+	// ï¿½ï¿½ï¿½ï¿½
 	idx[12] = 8; idx[13] = 9; idx[14] = 10;
 	idx[15] = 8; idx[16] = 10; idx[17] = 11;
-	// ¾Æ·§¸é
+	// ï¿½Æ·ï¿½ï¿½ï¿½
 	idx[18] = 12; idx[19] = 13; idx[20] = 14;
 	idx[21] = 12; idx[22] = 14; idx[23] = 15;
-	// ¿ÞÂÊ¸é
+	// ï¿½ï¿½ï¿½Ê¸ï¿½
 	idx[24] = 16; idx[25] = 17; idx[26] = 18;
 	idx[27] = 16; idx[28] = 18; idx[29] = 19;
-	// ¿À¸¥ÂÊ¸é
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½
 	idx[30] = 20; idx[31] = 21; idx[32] = 22;
 	idx[33] = 20; idx[34] = 22; idx[35] = 23;
 
@@ -378,15 +378,15 @@ void GeometryHelper::CreateGrid(shared_ptr<Geometry<VertexTextureNormalData>> ge
 
 void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalData>> geometry)
 {
-	float radius = 0.5f; // ±¸ÀÇ ¹ÝÁö¸§
-	uint32 stackCount = 20; // °¡·Î ºÐÇÒ
-	uint32 sliceCount = 20; // ¼¼·Î ºÐÇÒ
+	float radius = 0.5f; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	uint32 stackCount = 20; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	uint32 sliceCount = 20; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 	vector<VertexTextureNormalData> vtx;
 
 	VertexTextureNormalData v;
 
-	// ºÏ±Ø
+	// ï¿½Ï±ï¿½
 	v.position = Vec3(0.0f, radius, 0.0f);
 	v.uv = Vec2(0.5f, 0.0f);
 	v.normal = v.position;
@@ -399,12 +399,12 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalData>> 
 	float deltaU = 1.f / static_cast<float>(sliceCount);
 	float deltaV = 1.f / static_cast<float>(stackCount);
 
-	// °í¸®¸¶´Ù µ¹¸é¼­ Á¤Á¡À» °è»êÇÑ´Ù (ºÏ±Ø/³²±Ø ´ÜÀÏÁ¡Àº °í¸®°¡ X)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½é¼­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½ (ï¿½Ï±ï¿½/ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ X)
 	for (uint32 y = 1; y <= stackCount - 1; ++y)
 	{
 		float phi = y * stackAngle;
 
-		// °í¸®¿¡ À§Ä¡ÇÑ Á¤Á¡
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		for (uint32 x = 0; x <= sliceCount; ++x)
 		{
 			float theta = x * sliceAngle;
@@ -422,7 +422,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalData>> 
 		}
 	}
 
-	// ³²±Ø
+	// ï¿½ï¿½ï¿½ï¿½
 	v.position = Vec3(0.0f, -radius, 0.0f);
 	v.uv = Vec2(0.5f, 1.0f);
 	v.normal = v.position;
@@ -433,7 +433,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalData>> 
 
 	vector<uint32> idx(36);
 
-	// ºÏ±Ø ÀÎµ¦½º
+	// ï¿½Ï±ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 	for (uint32 i = 0; i <= sliceCount; ++i)
 	{
 		//  [0]
@@ -444,7 +444,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalData>> 
 		idx.push_back(i + 1);
 	}
 
-	// ¸öÅë ÀÎµ¦½º
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 	uint32 ringVertexCount = sliceCount + 1;
 	for (uint32 y = 0; y < stackCount - 2; ++y)
 	{
@@ -465,7 +465,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalData>> 
 		}
 	}
 
-	// ³²±Ø ÀÎµ¦½º
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 	uint32 bottomIndex = static_cast<uint32>(vtx.size()) - 1;
 	uint32 lastRingStartIndex = bottomIndex - ringVertexCount;
 	for (uint32 i = 0; i < sliceCount; ++i)
@@ -516,32 +516,32 @@ void GeometryHelper::CreateCube(shared_ptr<Geometry<VertexTextureNormalTangentDa
 
 	vector<VertexTextureNormalTangentData> vtx(24);
 
-	// ¾Õ¸é
+	// ï¿½Õ¸ï¿½
 	vtx[0] = VertexTextureNormalTangentData(Vec3(-w2, -h2, -d2), Vec2(0.0f, 1.0f), Vec3(0.0f, 0.0f, -1.0f), Vec3(1.0f, 0.0f, 0.0f));
 	vtx[1] = VertexTextureNormalTangentData(Vec3(-w2, +h2, -d2), Vec2(0.0f, 0.0f), Vec3(0.0f, 0.0f, -1.0f), Vec3(1.0f, 0.0f, 0.0f));
 	vtx[2] = VertexTextureNormalTangentData(Vec3(+w2, +h2, -d2), Vec2(1.0f, 0.0f), Vec3(0.0f, 0.0f, -1.0f), Vec3(1.0f, 0.0f, 0.0f));
 	vtx[3] = VertexTextureNormalTangentData(Vec3(+w2, -h2, -d2), Vec2(1.0f, 1.0f), Vec3(0.0f, 0.0f, -1.0f), Vec3(1.0f, 0.0f, 0.0f));
-	// µÞ¸é
+	// ï¿½Þ¸ï¿½
 	vtx[4] = VertexTextureNormalTangentData(Vec3(-w2, -h2, +d2), Vec2(1.0f, 1.0f), Vec3(0.0f, 0.0f, 1.0f), Vec3(-1.0f, 0.0f, 0.0f));
 	vtx[5] = VertexTextureNormalTangentData(Vec3(+w2, -h2, +d2), Vec2(0.0f, 1.0f), Vec3(0.0f, 0.0f, 1.0f), Vec3(-1.0f, 0.0f, 0.0f));
 	vtx[6] = VertexTextureNormalTangentData(Vec3(+w2, +h2, +d2), Vec2(0.0f, 0.0f), Vec3(0.0f, 0.0f, 1.0f), Vec3(-1.0f, 0.0f, 0.0f));
 	vtx[7] = VertexTextureNormalTangentData(Vec3(-w2, +h2, +d2), Vec2(1.0f, 0.0f), Vec3(0.0f, 0.0f, 1.0f), Vec3(-1.0f, 0.0f, 0.0f));
-	// À­¸é
+	// ï¿½ï¿½ï¿½ï¿½
 	vtx[8] = VertexTextureNormalTangentData(Vec3(-w2, +h2, -d2), Vec2(0.0f, 1.0f), Vec3(0.0f, 1.0f, 0.0f), Vec3(1.0f, 0.0f, 0.0f));
 	vtx[9] = VertexTextureNormalTangentData(Vec3(-w2, +h2, +d2), Vec2(0.0f, 0.0f), Vec3(0.0f, 1.0f, 0.0f), Vec3(1.0f, 0.0f, 0.0f));
 	vtx[10] = VertexTextureNormalTangentData(Vec3(+w2, +h2, +d2), Vec2(1.0f, 0.0f), Vec3(0.0f, 1.0f, 0.0f), Vec3(1.0f, 0.0f, 0.0f));
 	vtx[11] = VertexTextureNormalTangentData(Vec3(+w2, +h2, -d2), Vec2(1.0f, 1.0f), Vec3(0.0f, 1.0f, 0.0f), Vec3(1.0f, 0.0f, 0.0f));
-	// ¾Æ·§¸é
+	// ï¿½Æ·ï¿½ï¿½ï¿½
 	vtx[12] = VertexTextureNormalTangentData(Vec3(-w2, -h2, -d2), Vec2(1.0f, 1.0f), Vec3(0.0f, -1.0f, 0.0f), Vec3(-1.0f, 0.0f, 0.0f));
 	vtx[13] = VertexTextureNormalTangentData(Vec3(+w2, -h2, -d2), Vec2(0.0f, 1.0f), Vec3(0.0f, -1.0f, 0.0f), Vec3(-1.0f, 0.0f, 0.0f));
 	vtx[14] = VertexTextureNormalTangentData(Vec3(+w2, -h2, +d2), Vec2(0.0f, 0.0f), Vec3(0.0f, -1.0f, 0.0f), Vec3(-1.0f, 0.0f, 0.0f));
 	vtx[15] = VertexTextureNormalTangentData(Vec3(-w2, -h2, +d2), Vec2(1.0f, 0.0f), Vec3(0.0f, -1.0f, 0.0f), Vec3(-1.0f, 0.0f, 0.0f));
-	// ¿ÞÂÊ¸é
+	// ï¿½ï¿½ï¿½Ê¸ï¿½
 	vtx[16] = VertexTextureNormalTangentData(Vec3(-w2, -h2, +d2), Vec2(0.0f, 1.0f), Vec3(-1.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, -1.0f));
 	vtx[17] = VertexTextureNormalTangentData(Vec3(-w2, +h2, +d2), Vec2(0.0f, 0.0f), Vec3(-1.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, -1.0f));
 	vtx[18] = VertexTextureNormalTangentData(Vec3(-w2, +h2, -d2), Vec2(1.0f, 0.0f), Vec3(-1.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, -1.0f));
 	vtx[19] = VertexTextureNormalTangentData(Vec3(-w2, -h2, -d2), Vec2(1.0f, 1.0f), Vec3(-1.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, -1.0f));
-	// ¿À¸¥ÂÊ¸é
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½
 	vtx[20] = VertexTextureNormalTangentData(Vec3(+w2, -h2, -d2), Vec2(0.0f, 1.0f), Vec3(1.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 1.0f));
 	vtx[21] = VertexTextureNormalTangentData(Vec3(+w2, +h2, -d2), Vec2(0.0f, 0.0f), Vec3(1.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 1.0f));
 	vtx[22] = VertexTextureNormalTangentData(Vec3(+w2, +h2, +d2), Vec2(1.0f, 0.0f), Vec3(1.0f, 0.0f, 0.0f), Vec3(0.0f, 0.0f, 1.0f));
@@ -551,22 +551,22 @@ void GeometryHelper::CreateCube(shared_ptr<Geometry<VertexTextureNormalTangentDa
 
 	vector<uint32> idx(36);
 
-	// ¾Õ¸é
+	// ï¿½Õ¸ï¿½
 	idx[0] = 0; idx[1] = 1; idx[2] = 2;
 	idx[3] = 0; idx[4] = 2; idx[5] = 3;
-	// µÞ¸é
+	// ï¿½Þ¸ï¿½
 	idx[6] = 4; idx[7] = 5; idx[8] = 6;
 	idx[9] = 4; idx[10] = 6; idx[11] = 7;
-	// À­¸é
+	// ï¿½ï¿½ï¿½ï¿½
 	idx[12] = 8; idx[13] = 9; idx[14] = 10;
 	idx[15] = 8; idx[16] = 10; idx[17] = 11;
-	// ¾Æ·§¸é
+	// ï¿½Æ·ï¿½ï¿½ï¿½
 	idx[18] = 12; idx[19] = 13; idx[20] = 14;
 	idx[21] = 12; idx[22] = 14; idx[23] = 15;
-	// ¿ÞÂÊ¸é
+	// ï¿½ï¿½ï¿½Ê¸ï¿½
 	idx[24] = 16; idx[25] = 17; idx[26] = 18;
 	idx[27] = 16; idx[28] = 18; idx[29] = 19;
-	// ¿À¸¥ÂÊ¸é
+	// ï¿½ï¿½ï¿½ï¿½ï¿½Ê¸ï¿½
 	idx[30] = 20; idx[31] = 21; idx[32] = 22;
 	idx[33] = 20; idx[34] = 22; idx[35] = 23;
 
@@ -619,15 +619,15 @@ void GeometryHelper::CreateGrid(shared_ptr<Geometry<VertexTextureNormalTangentDa
 
 void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalTangentData>> geometry)
 {
-	float radius = 0.5f; // ±¸ÀÇ ¹ÝÁö¸§
-	uint32 stackCount = 20; // °¡·Î ºÐÇÒ
-	uint32 sliceCount = 20; // ¼¼·Î ºÐÇÒ
+	float radius = 0.5f; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	uint32 stackCount = 20; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+	uint32 sliceCount = 20; // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 
 	vector<VertexTextureNormalTangentData> vtx;
 
 	VertexTextureNormalTangentData v;
 
-	// ºÏ±Ø
+	// ï¿½Ï±ï¿½
 	v.position = Vec3(0.0f, radius, 0.0f);
 	v.uv = Vec2(0.5f, 0.0f);
 	v.normal = v.position;
@@ -642,12 +642,12 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalTangent
 	float deltaU = 1.f / static_cast<float>(sliceCount);
 	float deltaV = 1.f / static_cast<float>(stackCount);
 
-	// °í¸®¸¶´Ù µ¹¸é¼­ Á¤Á¡À» °è»êÇÑ´Ù (ºÏ±Ø/³²±Ø ´ÜÀÏÁ¡Àº °í¸®°¡ X)
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½é¼­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ñ´ï¿½ (ï¿½Ï±ï¿½/ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ X)
 	for (uint32 y = 1; y <= stackCount - 1; ++y)
 	{
 		float phi = y * stackAngle;
 
-		// °í¸®¿¡ À§Ä¡ÇÑ Á¤Á¡
+		// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		for (uint32 x = 0; x <= sliceCount; ++x)
 		{
 			float theta = x * sliceAngle;
@@ -670,7 +670,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalTangent
 		}
 	}
 
-	// ³²±Ø
+	// ï¿½ï¿½ï¿½ï¿½
 	v.position = Vec3(0.0f, -radius, 0.0f);
 	v.uv = Vec2(0.5f, 1.0f);
 	v.normal = v.position;
@@ -683,7 +683,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalTangent
 
 	vector<uint32> idx(36);
 
-	// ºÏ±Ø ÀÎµ¦½º
+	// ï¿½Ï±ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 	for (uint32 i = 0; i <= sliceCount; ++i)
 	{
 		//  [0]
@@ -694,7 +694,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalTangent
 		idx.push_back(i + 1);
 	}
 
-	// ¸öÅë ÀÎµ¦½º
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 	uint32 ringVertexCount = sliceCount + 1;
 	for (uint32 y = 0; y < stackCount - 2; ++y)
 	{
@@ -715,7 +715,7 @@ void GeometryHelper::CreateSphere(shared_ptr<Geometry<VertexTextureNormalTangent
 		}
 	}
 
-	// ³²±Ø ÀÎµ¦½º
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½
 	uint32 bottomIndex = static_cast<uint32>(vtx.size()) - 1;
 	uint32 lastRingStartIndex = bottomIndex - ringVertexCount;
 	for (uint32 i = 0; i < sliceCount; ++i)

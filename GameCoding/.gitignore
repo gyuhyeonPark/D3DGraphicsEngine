@@ -1,7 +1,5 @@
 *.obj
 *.exe
-*.lib
-*.dll
 *.pdb
 *.idb
 *.ilk
